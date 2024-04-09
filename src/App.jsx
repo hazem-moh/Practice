@@ -35,7 +35,7 @@ function App() {
   return (
     <div className="App mt-24">
       <div className="bg-gray-200 p-10 rounded-lg mb-7 text-center">
-        <p className='text-xl'>You have {- cartCount} items in your cart</p>
+        <p className='text-xl'>You have <span className='bg-green-500 text-white p-3 rounded-md '>{- cartCount}</span> items in your cart</p>
       </div>
       <div className="container mx-auto grid sm:grid-cols-1 md:grid-cols-2 gap-5">
         <Item onAddToCart={incrementCounter} />
